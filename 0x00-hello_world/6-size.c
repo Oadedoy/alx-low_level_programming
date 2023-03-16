@@ -5,13 +5,11 @@
  *
  * Description: using sizeof to print the size of various types.
  *
- * Return: Always 0 (Sucessful)
+ * Return: Always 0 (Sucess)
  */
 
 int main(void)
-
 {
-	/*sideof evaluates the size of a variable*/
 printf("Size of a char: %lubyte(s)\n", sizeof(char));
 printf("Size of an int: %lubyte(s)\n", sizeof(int));
 printf("Size of a double: %lubyte(s)\n", sizeof(double));
