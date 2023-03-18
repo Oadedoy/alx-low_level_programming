@@ -6,14 +6,17 @@
  *
  * Return: always 0 (success)
  */
+
 int main(void);
 {
-	int i;
+	int digit = 0;
 
-	for (i = 0; i < 10; ++i)
+	while (digit <= 9)
 	{
-		printf("%d", i);
+		printf("%i", digit);
+		++digit;
 	}
 	printf("\n");
+
 	return (0);
 }
