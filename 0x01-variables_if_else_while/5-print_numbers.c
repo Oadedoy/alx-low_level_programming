@@ -2,7 +2,7 @@
 /**
  * main - entry point
  *
- * Description: prints int 0 through 9
+ * Description: prints from 0 to 9
  *
  * Return: always 0 (success)
  */
