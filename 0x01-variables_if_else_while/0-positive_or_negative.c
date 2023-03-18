@@ -1,11 +1,10 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
 /**
  * main - Entry point
  *
- * Description: print value of n saved
+ * Description: This code shows a random number
  *
  * Return: Always 0 (Sucess)
  */
@@ -13,15 +12,21 @@
 int main(void)
 {
 int n;
+
 srand(time(0));
-n = rand() - RAND_MAX /2;
-
+n = rand() - RAND_MAX / 2;
+printf("%d ", n);
 if (n > 0)
-	printf("%i is positive\n", n);
+{
+	printf("is positive\n");
+}
 else if (n == 0)
-	printf("%i is zero\n", n);
+{
+	printf("is zero\n");
+}
 else
-	printf("%i is negative\n", n);
-
+{
+	printf("is negative\n");
+}
 return (0);
 }
