@@ -3,7 +3,7 @@
 #include <stdlib.h>
 /**
  * str_concat - a function that concatenates two strings and null
- * 		 terminated.
+ * terminated.
  *
  * @s1: input from string 1
  * @s2: input from string 2
