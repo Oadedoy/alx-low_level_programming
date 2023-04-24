@@ -1,6 +1,28 @@
 #include <stdio.h>
 #include "main.h"
 /**
+ * multiple - function that guess multiple that create square root
+ * @x: number to find its square root
+ * @y: number which are multiples
+ *
+ * Return: returns the result for x through y
+ */
+int multiple(int x, int y)
+{
+	if (x == (y * y))
+	{
+		return (y);
+	}
+	else if (x <= (y*y))
+	{
+		return (-1);
+	}
+	else
+	{
+		return (multiple(x, y + 1));
+	}
+}
+/**
  * _sqrt_recursion - function that returns the natural square root of a
  * number
  * @n: interger argument
@@ -19,24 +41,6 @@ int _sqrt_recursion(int n)
 	}
 	else
 	{
-		int i = 0, f = n;
-		while (i <= f)
-		{
-			int a = (i + f) / 2;
-			
-			if  (a == (n / a))
-			{
-				return (a);
-			}
-			else if (a < (n / a))
-			{
-				i = a + 1;
-			}
-			else
-			{
-				f = a - 1;
-			}
-		}
-		return (i - 1);
+		return (multiple(n, 0));
 	}
 }
