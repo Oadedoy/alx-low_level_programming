@@ -13,7 +13,7 @@ int multiple(int x, int y)
 	{
 		return (y);
 	}
-	else if (x <= (y*y))
+	else if (x <= (y * y))
 	{
 		return (-1);
 	}
