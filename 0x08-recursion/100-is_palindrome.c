@@ -25,7 +25,7 @@ int str_len(char *s)
  *
  * Return: returns (0)
  */
-int comp_strg(char *s, int a , int b)
+int comp_strg(char *s, int a, int b)
 {
 	if (*(s + a) == *(s + b))
 	{
