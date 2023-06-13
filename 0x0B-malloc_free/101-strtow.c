@@ -8,14 +8,14 @@
  */
 int word_count(char *str)
 {
-	int i, f, n;
+	int i, c, n;
 
 	i = 0;
 	n = 0;
 
-	for (f = 0; str[f] != '\0'; f++)
+	for (c = 0; str[c] != '\0'; c++)
 	{
-		if (str[f] == ' ')
+		if (str[c] == ' ')
 			i = 0;
 		else if (i == 0)
 		{
@@ -34,7 +34,7 @@ int word_count(char *str)
  */
 char **strtow(char *str)
 {
-	char **p, *temp;
+	char **nstr, *temp;
 	int i, k, n, c, words, start, end;
 
 	k = 0;
@@ -46,7 +46,7 @@ char **strtow(char *str)
 	if (words == 0)
 		return (NULL);
 	nstr = (char **) malloc(sizeof(char *) * (words + 1));
-	if (p == NULL)
+	if (nstr == NULL)
 		return (NULL);
 	for (i = 0; i <= n; i++)
 	{
@@ -61,7 +61,7 @@ char **strtow(char *str)
 				while (start < end)
 					*temp++ = str[start++];
 				*temp = '\0';
-				p[k] = temp - c;
+				nstr[k] = temp - c;
 				k++;
 				c = 0;
 			}
@@ -69,6 +69,6 @@ char **strtow(char *str)
 		else if (c++ == 0)
 			start = i;
 	}
-	p[k] = NULL;
-	return (p);
+	nstr[k] = NULL;
+	return (nstr);
 }
