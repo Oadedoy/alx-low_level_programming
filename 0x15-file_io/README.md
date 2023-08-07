@@ -1,0 +1,1 @@
+This directory is for my file input and output project tasks using the C programming language.
